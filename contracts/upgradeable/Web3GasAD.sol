@@ -68,9 +68,9 @@ contract Web3AD is IWeb3AD, ERC20Upgradeable, AccessControlUpgradeable, Pausable
         string memory description,
         uint256 show
     ) public payable {
-        require(msg.value >= showMap[show]., "Web3AD: low balance");
+        //require(msg.value >= showMap[show]., "Web3AD: low balance");
 
-        adMap[ADLength] = AD(name, photoUrl, linkUrl, description, balance, _msgSender());
+        //adMap[ADLength] = AD(name, photoUrl, linkUrl, description, balance, _msgSender());
         ADLength++;
 
     }
